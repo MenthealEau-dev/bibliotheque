@@ -1,0 +1,505 @@
+@font-face {
+    font-family: "osvad";
+    src: url(./polices/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url(./polices/Oswald/Nunito-VariableFont_wght.ttf);
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+.titre {
+    font-family: "osvad";
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(to right, green, orange);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    margin-top: 110px;
+    font-family: "Nunito";
+}
+
+.nav-bar-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar-container li {
+    margin: 10px 10px 0px;
+    color: white;
+    list-style: none;
+    font-size: 20px;
+    width: 114px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-shadow: 3px 5px 13px #2c2727;
+}
+
+.nav-bar-container a {
+    color: white;
+    text-decoration: none;
+}
+
+#acc {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.parent {
+    margin-top: 70px;
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.titre {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    padding: 20px;
+    margin: 20px;
+    text-shadow: 3px 5px 13px #2c2727;
+}
+
+.parent img {
+    width: 100%;
+}
+
+.desc {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 120px;
+}
+
+.desc img {
+    width: 70%;
+
+}
+
+img {
+    filter: drop-shadow(7px 9px 10px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+}
+
+.sections {
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-shadow: 3px 5px 8px black;
+}
+
+#sections1 {
+    margin-left: 50px;
+    text-align: left;
+}
+
+.desc p,
+.hist p {
+    text-align: justify;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    text-shadow: 3px 3px 5px black;
+
+}
+
+.hist {
+    display: flex;
+}
+
+#sections2 {
+    margin-right: 50px;
+    text-align: right;
+}
+
+.hist p {
+    padding: 30px;
+    margin: 10px;
+}
+
+.hist img {
+    width: 45%;
+    cursor: pointer;
+}
+
+.brh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brh img {
+    width: 20%;
+    cursor: pointer;
+}
+
+#sections3 {
+    text-align: center;
+}
+
+.vart {
+    display: flex;
+
+}
+
+.vart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.liste {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.2rem;
+    margin: 30px auto;
+    text-shadow: 5px 7px 9px black;
+}
+
+.bff:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.cont {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 40% 60%;
+}
+
+.cont form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "i1 i1"
+        "ta ta"
+        "vi bt";
+}
+
+textarea {
+    grid-area: ta;
+    height: 50px;
+    resize: none;
+}
+
+#btn {
+    grid-area: bt;
+}
+
+#btn:hover {
+    background: greenyellow;
+    transition: all 0.8s ease;
+}
+
+form input:hover {
+    background: greenyellow;
+    padding: 0px 20px;
+    color: black;
+    transition: all 0.8s ease;
+}
+
+form textarea:hover {
+    background: greenyellow;
+    padding-left: 20px;
+    color: black;
+    transition: all 0.8s ease;
+}
+
+form input,
+textarea {
+    margin: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 6px black;
+    cursor: pointer;
+
+}
+
+
+form {
+    padding: 10px;
+    margin: 20px;
+}
+
+.listemoi {
+    color: white;
+    list-style: none;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listemoi a {
+    color: rgb(162, 0, 255);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 2px;
+    text-shadow: 3px 5px 6px black;
+}
+
+.listemoi a:hover {
+    font-size: 22px;
+    margin: 8px;
+    color: white;
+}
+
+.fin {
+    font-size: larger;
+    color: white;
+}
+
+.navbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.352);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-radius: 0 0 20px 20px;
+}
+
+.navbox a:hover {
+    color: rgb(67, 48, 210);
+    font-size: 25px;
+    transition: all 0.6s ease;
+}
+
+.fin {
+    margin: 5px 30px;
+}
+
+.fin a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 30px;
+    color: rgb(162, 0, 255);
+    text-shadow: 6px 3px 5px black;
+}
+
+.fin a:hover {
+    color: white;
+    font-size: 22px;
+    transition: all 0.2s ease;
+}
+
+#placide {
+    color: black;
+    font-size: 1rem;
+    text-shadow: 4px 4px 10px black;
+}
+
+@media screen and (max-width:768px) {
+
+    .hist img {
+        width: 30%;
+    }
+
+    .titre {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .parent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titre {
+        font-size: 1.6rem;
+    }
+
+    .parent img {
+        width: 50%;
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .desc {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .hist {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hist img {
+        width: 50%;
+    }
+
+    .liste {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .vart {
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .liste li {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+
+    .nav-bar-container li {
+        font-size: 0.8rem;
+
+    }
+
+}
+
+
+@media (max-width: 426px) {
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .listemoi {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .listemoi li {
+        margin: 10px 0;
+    }
+
+    .cont form {
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cont form input,
+    .cont form textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .cont form textarea {
+        height: 150px;
+        resize: none;
+    }
+
+    #btn {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width:376) {
+    .titre{
+        font-size: 0.5rem;
+    }
+    .vart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .liste {
+        width: 90%;
+        padding-left: 25px;
+        margin: 0;
+    }
+
+    .bff {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .brh img {
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media (max-width: 320px) {
+
+    .vart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .liste {
+        width: 90%;
+        padding-left: 25px;
+        margin: 0;
+    }
+
+    .bff {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .brh img {
+        width: 100%;
+        height: auto;
+    }
+    .nav-bar-container li{
+        font-size:12px;
+    }
+    .ma{
+        font-size: 1px;
+    }
+}
