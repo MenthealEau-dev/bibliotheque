@@ -106,13 +106,14 @@
                 </ul>
             </nav>
                 <form action="https://formsubmit.co/patriceuro10@gmail.com" method="post">
-                    <input type="text" id="firstname" placeholder="Prénom">
-                    <input type="text" id="name" placeholder="Nom">
-                    <textarea 
+                    <input name="Prénom" type="text" id="firstname" placeholder="Prénom">
+                    <input name="Nom" type="text" id="name" placeholder="Nom">
+                    <textarea name="Message"
                         cols="30"
                         rows="10"
                         placeholder="Ici votre message"
                     ></textarea>
+                    <input type="hidden" name="_next" value="https://menthealeau-dev.github.io/bibliotheque/#accueil">
                     <input type="submit" value="Envoyer" id="btn">
                 </form>
             </div>
