@@ -105,17 +105,51 @@
                     <li><a href="https://www.tiktok.com/@urameshi_sama?_r=1&_t=ZS-98Q4cv0nYua">Tiktok</a></li>
                 </ul>
             </nav>
-                <form action="https://formsubmit.co/patriceuro10@gmail.com" method="post">
-                    <input name="Prénom" type="text" id="firstname" placeholder="Prénom">
-                    <input name="Nom" type="text" id="name" placeholder="Nom">
-                    <textarea name="Message"
-                        cols="30"
-                        rows="10"
-                        placeholder="Ici votre message"
-                    ></textarea>
-                    <input type="hidden" name="_next" value="https://menthealeau-dev.github.io/bibliotheque/#accueil">
-                    <input type="submit" value="Envoyer" id="btn">
-                </form>
+            <form action="https://formsubmit.co/patriceuro10@gmail.com" method="POST">
+
+                <input 
+                    name="Prénom" 
+                    type="text" 
+                    id="firstname" 
+                    placeholder="Prénom"
+                    required
+                >
+
+                <input 
+                    name="Nom" 
+                    type="text" 
+                    id="name" 
+                    placeholder="Nom"
+                    required
+                >
+
+                <textarea 
+                    name="Message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Ici votre message"
+                    required
+                ></textarea>
+
+                <input 
+                    type="hidden" 
+                    name="_next" 
+                    value="https://menthealeau-dev.github.io/bibliotheque/#accueil"
+                >
+
+                <input 
+                    type="hidden" 
+                    name="_captcha" 
+                    value="true"
+                >
+
+                <input 
+                    type="submit" 
+                    value="Envoyer" 
+                    id="btn"
+                >
+
+            </form>
             </div>
         </section>
         <div class="fin">Source : <a href="https://fr.wikipedia.org/wiki/Mangue">Wikipedia</a></div>
