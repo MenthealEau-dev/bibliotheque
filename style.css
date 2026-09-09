@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "police";
+    src: url(./font/Orbitron-Bold.ttf);
+}
+
+body{
+    font-family:"police";
+    background-image: url(./images/fond\ musique4.webp);
+    background-repeat: no-repeat;
+    background-position-y: 100px;
+    background-position-x: 50%;
+    background-size :400px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y:hidden;
+}
+.titre{
+    text-align: center;
+    padding: 10px;
+}
+
+.titre:hover{
+    color: rgb(0, 191, 255);
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.keybox{
+    margin-top: 10px;
+}
+
+#key{
+    font-size: 4rem;
+    padding: 10px;
+}
+
+.instructions {
+    padding-top: 10px;
+    padding-left: 15px;
+    width: 20%;
+}
+
+.instructions:hover{
+    cursor: pointer;
+    color: rgb(255, 127, 140);
+    transform: scale(1.1);
+    transition: ease 0.2s;
+}
+.instruction {
+    padding-top: 10px;
+    font-size: 0.7rem;
+    visibility: hidden;
+    color: blue;
+}
+
+.close{
+    color: black;
+}
+.close:hover{
+    color:darkblue;
+    cursor: pointer;
+    font-size: medium;
+    transition: ease 0.2s;
+
+}
+.fin{
+    position:absolute;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+}
+
+@media screen and (max-width:390px){
+    .titre{
+        font-size: 2rem;
+        padding: 20px;
+    }
+    body{
+        background-position-y:220px;
+    }
+    .fin{
+        font-size: 0.7rem;
+        padding-right: 5px;    
+    }
+
+    
+}
+@media screen and (max-width:360px){
+    .titre{
+        font-size: 2rem;
+        padding: 20px;
+    }
+    body{
+        background-position-y:220px;
+    }
+    .fin{
+        font-size: 0.7rem;
+        padding-right: 5px;    
+    }
+}
+
+@media screen and (max-width:428px){
+    .titre{
+        font-size: 2rem;
+        padding: 20px;
+    }
+    body{
+        background-position-y:220px;
+    }
+    .fin{
+        font-size: 0.7rem;
+        padding-right: 5px;    
+    }
+
+    
+}
